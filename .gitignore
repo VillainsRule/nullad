@@ -1,0 +1,15 @@
+# modules
+node_modules
+bun.lock
+
+# protected
+.env
+
+# builds
+output.css
+
+# development
+tests
+
+# macos
+.DS_Store
