@@ -36,7 +36,17 @@ To set up nullad on your local machine, follow these steps:
    ```bash
     bun run build
    ```
-4. **Start the Server**
+4. **Setup .env**
+   1. Create a `.env` file in the root directory.
+   2. Create a Cloudflare Turnstile account and obtain your "secret" and "sitekey".
+   3. Obtain a residental (or at least ISP-based) proxy that supports HTTPS.
+   4. Add the following variables to the `.env` file:
+   ```env
+    CF_SITEKEY=your_cloudflare_turnstile_sitekey
+    CF_SECRET=your_cloudflare_turnstile_secret
+    PROCCY=https://username:password@host:port
+    ```
+5. **Start the Server**
    For production:
    ```bash
     bun run start
